@@ -22,6 +22,7 @@ Display the necessary states and the time taken.
 
 
 ## PROGRAM
+
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -32,9 +33,6 @@ from collections import defaultdict, deque, Counter
 from itertools import combinations
 from IPython.display import display
 from notebook import plot_NQueens
-import time
-start_time = time.time()
-
 
 class Problem(object):
     """The abstract class for a formal problem. A new domain subclasses this,
@@ -161,6 +159,7 @@ nq1=NQueensProblem(8)
 plot_NQueens(nq1.initial)
 n1 = Node(state=nq1.initial)
 num_conflicts = nq1.h(n1)
+import time
 start=time.time()
 sol1=hill_climbing(nq1,iterations=20000)
 end=time.time()
@@ -171,16 +170,17 @@ plot_NQueens(list(sol1.state))
 print("The total time required for 20000 iterations is {0:.4f} seconds".format(end-start))
 
 
-iterations=[600,700,850,950,1700,2500,3500,4000,5900,12000]
+n_values=[2**x for x in range(3,7)]
 time_taken=[]
 num=1
-for each_i in iterations:
-    print("Type {0}:\tIterations:{1}".format(num,each_i))
+for each_i in n_values:
+    nq1=NQueensProblem(each_i)
+    print("Type {0}:\tN-value:{1}".format(num,each_i))
     n1 = Node(state=nq1.initial)
     num_conflicts = nq1.h(n1)
-    print("Initial Conflicts = {0}".format(num_conflicts))
+    print("Initial Conflicts = {0}\n".format(num_conflicts))
     start=time.time()
-    sol1=hill_climbing(nq1,iterations=each_i)
+    sol1=hill_climbing(nq1,iterations=100)
     end=time.time()
     print(sol1.state)
     num_conflicts = nq1.h(sol1)
@@ -189,12 +189,13 @@ for each_i in iterations:
     time_taken.append(end-start)
     num+=1
     
-    
-plt.title("Number of Iterations VS Time taken")
-plt.xlabel("Iteration")
+plt.title("N-Value VS Time taken")
+plt.xlabel("N-value")
 plt.ylabel("Time taken")
-plt.plot(iterations,time_taken)
+plt.plot(n_values,time_taken)
 plt.show()
+OUTPUT:
+
 ```
 ## OUTPUT:
 
@@ -227,7 +228,6 @@ The larger the state space, the longer it take to complete the search.
 ## Time Complexity Plot
 #### Graph for various value of N and time(seconds)
 
-![Screenshot (119)](https://user-images.githubusercontent.com/75235334/169683724-60e68546-3519-4b5d-ae1b-62b94ad5f61e.png)
 ## RESULT:
 
 Hence, a code to solve eight queens problem using the hill-climbing algorithm has been implemented.
