@@ -22,7 +22,7 @@ Display the necessary states and the time taken.
 
 
 ## PROGRAM
-```
+```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 import random
