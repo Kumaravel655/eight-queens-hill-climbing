@@ -203,15 +203,6 @@ OUTPUT:
 ![Screenshot (128)](https://user-images.githubusercontent.com/75235334/169683937-b05e07d1-3485-436f-ad0b-4721662f31b1.png)
 ![Screenshot (127)](https://user-images.githubusercontent.com/75235334/169683912-d4f079a8-a398-4e53-a64e-063c1a779510.png)
 
-![Screenshot (122)](https://user-images.githubusercontent.com/75235334/169683570-c7fa8e44-4b9c-4aea-b812-661f9c4aee0b.png)
-
----
-![Screenshot (121)](https://user-images.githubusercontent.com/75235334/169683539-49e0b3e0-c1d2-4ada-99c6-51d9fea12106.png)
-
----
-![Screenshot (120)](https://user-images.githubusercontent.com/75235334/169683496-46a1ac36-6253-4e25-b665-28a3d6b69529.png)
----
-
 
 
 
