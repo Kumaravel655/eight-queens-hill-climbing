@@ -204,6 +204,8 @@ OUTPUT:
 ![Screenshot (127)](https://user-images.githubusercontent.com/75235334/169683912-d4f079a8-a398-4e53-a64e-063c1a779510.png)
 
 
+![Screenshot (130)](https://user-images.githubusercontent.com/75235334/169687924-fb4159e6-3f1a-4f37-a7d0-b2af677ff538.png)
+
 
 
 
@@ -218,6 +220,7 @@ The larger the state space, the longer it take to complete the search.
 
 ## Time Complexity Plot
 #### Graph for various value of N and time(seconds)
+![Screenshot (132)](https://user-images.githubusercontent.com/75235334/169687956-58b78009-a301-419a-918f-21c6d613e625.png)
 
 ## RESULT:
 
