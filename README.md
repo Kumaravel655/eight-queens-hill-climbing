@@ -1,4 +1,7 @@
-# Hill Climbing Algorithm for Eight Queens Problem
+## EX NO:05
+## DATE:23.05.22
+# <p align="center"> Hill Climbing Algorithm for Eight Queens Problem
+
 ## AIM
 
 To develop a code to solve eight queens problem using the hill-climbing algorithm.
@@ -194,11 +197,11 @@ plt.xlabel("N-value")
 plt.ylabel("Time taken")
 plt.plot(n_values,time_taken)
 plt.show()
-OUTPUT:
+
 
 ```
+ 
 ## OUTPUT:
-
 ![Screenshot (124)](https://user-images.githubusercontent.com/75235334/169683687-8b29907c-8d33-4c93-b8e3-a3ec053b3c9b.png)
 ![Screenshot (128)](https://user-images.githubusercontent.com/75235334/169683937-b05e07d1-3485-436f-ad0b-4721662f31b1.png)
 ![Screenshot (127)](https://user-images.githubusercontent.com/75235334/169683912-d4f079a8-a398-4e53-a64e-063c1a779510.png)
